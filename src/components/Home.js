@@ -10,8 +10,8 @@ const Home = (props) => {
     return (
         <Container>
             <UserField>
-                <img src="/images/Picture1.jpeg" alt="logo">
-                </img>
+                {/* <img src="/images/Picture1.png" alt="logo">
+                </img> */}
                 <Title>
                     <Designation>Software Engineer/Full Stack Developer </Designation>
                     <Name>Himanshu Soni</Name>

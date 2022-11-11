@@ -1,0 +1,35 @@
+.certs {
+  margin-left: calc(100% - 80vw);
+  margin-right: calc(100% - 80vw);
+  margin-bottom: 150px;
+}
+
+.certs .header {
+  margin-bottom: 72px !important;
+}
+
+.awards {
+  display: flex;
+}
+
+.htbbanner img {
+  min-height: 58px;
+  box-shadow: -8px -8px 16px #1f2020, 13px 13px 26px #000;
+}
+
+.thmbanner img {
+  min-height: 58px;
+  box-shadow: -8px -8px 16px #1f2020, 13px 13px 26px #000;
+  margin-right: 16px;
+}
+
+.certs_list ul li {
+  margin-bottom: 24px;
+  color: rgb(157, 173, 1);
+}
+
+.certs_list ul li span {
+  margin-bottom: 24px;
+  color: #fff;
+  font-size: 1.1rem;
+}

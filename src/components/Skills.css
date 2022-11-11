@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+
+.skillsheader {
+  margin-bottom: 52px;
+}
+
+.skillsheader {
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+.progress-line__outer {
+  display: flex;
+  margin: 15px auto;
+  border-radius: 12px;
+}
+
+.progress-line__inner {
+  border-radius: 12px;
+}
+
+.progress-line:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  border-top-right-radius: 24px;
+  box-shadow: -8px -8px 16px #1f2020, 13px 13px 26px #000;
+}
+
+.container {
+  justify-content: center;
+  margin-left: calc(100% - 80vw);
+  margin-right: calc(100% - 80vw);
+  color: azure;
+  margin-bottom: 150px !important;
+}
+
+.container h4 {
+  font-size: 1.25rem;
+}
+
+.skills {
+  display: grid;
+  grid-gap: 95px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  font-size: 1.15rem;
+}
+
+.skills__cards {
+  display: grid;
+  grid-gap: 12px;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.skills__cards__infra {
+  margin-top: 12px;
+  display: grid;
+  grid-gap: 12px;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.skills__cards__per {
+  background-color: #111;
+  padding: 12px;
+  text-align: center;
+  border-radius: 24px;
+  box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px,
+    rgb(0 0 0 / 72%) 0px 30px 22px -10px;
+  border: 2px solid rgb(157, 173, 1);
+}
+
+.skills__cards__per:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  box-shadow: -8px -8px 16px #1f2020, 13px 13px 26px #000;
+}
+
+@media (max-width: 731px) {
+  .skills__cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .skills__cards__infra {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .skills__cards {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .skills__cards__infra {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 411px) {
+  .skills__cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .skills__cards__infra {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 414px) {
+  .skills__cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .skills__cards__infra {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

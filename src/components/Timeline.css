@@ -1,0 +1,99 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.title {
+  font-size: 0em;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.workButton {
+  background-color: rgb(44, 44, 44) !important;
+  border: 2px solid rgb(196, 216, 1) !important;
+}
+
+.schoolButton {
+  background-color: rgb(44, 44, 44) !important;
+  border: 2px solid rgb(196, 216, 1) !important;
+}
+
+.vertical-timeline {
+  margin-top: 150px !important;
+  margin-bottom: 150px !important;
+}
+
+h3 {
+  padding-top: 0.25em;
+}
+
+.vertical-timeline-element-date {
+  color: white !important;
+  font-family: "Poppins", Helvetica, sans-sarif !important;
+  font-size: 16px;
+  letter-spacing: 1.08px;
+}
+
+.vertical-timeline-element div {
+  box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px,
+    rgb(0 0 0 / 72%) 0px 30px 22px -10px !important;
+}
+
+.vertical-timeline-element-content {
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 2em 3em !important;
+  background: rgb(26, 25, 25) !important;
+  color: white !important;
+}
+
+.vertical-timeline::before {
+  background: rgb(196, 216, 1) !important;
+}
+
+.date {
+  color: rgb(201, 251, 255);
+}
+
+.vertical-timeline-element-icon {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  border: 2px solid black !important;
+}
+
+#description {
+  margin: 1.5em 0 2em 0;
+}
+
+.button {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: white;
+}
+
+.workButton {
+  background-color: #06d6a0;
+}
+
+.workButton:hover {
+  background-color: #0ac593;
+}
+
+.schoolButton {
+  background-color: #f9c74f;
+}
+
+.schoolButton:hover {
+  background-color: #f3bc3c;
+}
+
+@media only screen and (max-width: 1700px) {
+  .vertical-timeline-element-date {
+    display: block !important;
+    float: none !important;
+    color: rgb(44, 44, 44);
+    margin-top: 1.5em;
+  }
+}

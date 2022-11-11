@@ -1,0 +1,43 @@
+* {
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Montserrat;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+    to bottom,
+    #000000,
+    #0b0b0b,
+    #131314,
+    #191a1a,
+    #1f2020,
+    #1f2020,
+    #1f2020,
+    #1f2020,
+    #191a1a,
+    #131314,
+    #0b0b0b,
+    #000000
+  );
+  z-index: -1;
+}
+
+a {
+  color: #f9f9f9;
+  text-decoration: none;
+}
+
+::selection {
+  color: #000;
+  background: rgb(196, 216, 1);
+  text-shadow: none;
+}

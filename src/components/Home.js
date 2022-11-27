@@ -17,10 +17,10 @@ const Home = (props) => {
                     <Name>Himanshu Soni</Name>
                     <hr className="green-line"/>
                     <Description>
-                    Graduate Student in CS @ Colorado State University | Seeking Summer '23 Internships
+                    Graduate Student in CS @ Colorado State University | Seeking Summer '23 Internships. Currently, I'm working as Corporate Webmaster in Rocky Mountain Student Media Corp.
                     </Description>
                     <Description>
-                        Currently, I'm working as Assistant Corporate Webmaster in Rocky Mountain Student Media Corp. <br /><br /> My specialties are in ReactJs and Nodejs application development
+                        My specialties are in ReactJs, Nodejs and Java application development
                     </Description>
                     <Controls>
                         <DownloadCV href="/files/Himanshu_resume_n5.pdf" target="_blank">Download CV</DownloadCV>

@@ -23,7 +23,7 @@ function Nav() {
             <div>
                 <img
                     className="nav__logo"
-                    src="/images/logo.png"
+                    src="/images/logo123.png"
                     alt="Logo"
                 />
             </div>

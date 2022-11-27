@@ -4,19 +4,59 @@ import Typewriter from "typewriter-effect";
 
 const SKILLS_LIST = [
     {
-      label: 'Python',
+      label: 'ReactJs',
       percentage: '100%',
     },
     {
-      label: 'Machine Learning',
-      percentage: '90%',
+      label: 'JavaScript',
+      percentage: '100%',
     },
     {
-      label: 'JavaScript',
+      label: 'Redux',
       percentage: '95%',
     },
     {
+      label: 'NextJs',
+      percentage: '95%',
+    },
+    {
+      label: 'Css',
+      percentage: '95%',
+    },
+    {
+      label: 'Bootstrap',
+      percentage: '95%',
+    },
+    {
+      label: 'Jest',
+      percentage: '95%',
+    },
+    {
+      label: 'MySQL',
+      percentage: '80%',
+    },
+    {
+      label: 'Webpack',
+      percentage: '95%',
+    },
+    {
+      label: 'C',
+      percentage: '70%',
+    },
+    {
+      label: 'Python',
+      percentage: '70%',
+    },
+    {
+      label: 'Angular',
+      percentage: '90%',
+    },
+    {
       label: 'Django',
+      percentage: '75%',
+    },
+    {
+      label: 'SASS',
       percentage: '95%',
     },
     {
@@ -24,73 +64,100 @@ const SKILLS_LIST = [
       percentage: '95%',
     },
     {
-      label: 'C',
-      percentage: '80%',
-    },
-    {
-      label: 'C++',
-      percentage: '90%',
-    },
-    {
-      label: 'Css',
+      label: 'PHP',
       percentage: '95%',
     },
     {
-      label: 'HTML',
+      label: 'Wordpress',
       percentage: '95%',
     },
     {
-      label: 'Angular',
-      percentage: '80%',
+      label: 'Swagger',
+      percentage: '95%',
+    },
+    {
+      label: 'Git',
+      percentage: '95%',
     },
   ];
 
 
   const SKILLS_LIST_2 = [
     {
-      label: 'Pentesting',
+      label: 'Node.js',
       percentage: '90%',
     },
     {
-      label: 'Networking',
+      label: 'TypeScript',
       percentage: '90%',
     },
     {
-      label: 'Linux',
+      label: 'Redux Saga/Thunk',
       percentage: '95%',
     },
     {
-      label: 'SQL/ Web/ AD/ Exchange Servers',
+      label: 'React Hooks',
       percentage: '95%',
     },
     {
-      label: 'Office 365',
-      percentage: '95%',
-    },
-    {
-      label: 'Powershell/ Bash Scripting',
-      percentage: '95%',
-    },
-    {
-      label: 'Wireshark/ Netmon',
+      label: 'HTML',
       percentage: '90%',
     },
     {
-      label: 'Metasploit',
-      percentage: '90%',
-    },
-    {
-      label: 'Nmap',
-      percentage: '90%',
-    },
-    {
-      label: 'Cryptography',
+      label: 'Java',
       percentage: '95%',
     },
+    {
+      label: 'Enzyme',
+      percentage: '95%',
+    },
+    {
+      label: 'Bootstrap',
+      percentage: '95%',
+    },
+    {
+      label: 'Docker',
+      percentage: '95%',
+    },
+    {
+      label: 'C++',
+      percentage: '75%',
+    },
+    {
+      label: 'Machine Learning',
+      percentage: '75%',
+    },
+    {
+      label: 'Vue',
+      percentage: '90%',
+    },
+    {
+      label: 'Material UI/Ant Design',
+      percentage: '90%',
+    },
+    {
+      label: 'LESS',
+      percentage: '95%',
+    },{
+      label: 'JSON',
+      percentage: '95%',
+    },
+    {
+      label: 'JQuery',
+      percentage: '95%',
+    },
+    {
+      label: 'Media Queries',
+      percentage: '95%',
+    },
+    {
+      label: 'Postman',
+      percentage: '95%',
+    },
+
   ];
 
-const SKILLS_CARDS = ["Objective - C", "C#", "Java", "Ruby", "PHP", "React.js", "SQL", "Swift"];
-const INFRA_SKILLS_CARDS = ["Azure", "AWS", "Google Cloud", "Exclaimer Cloud", "Global Relay", "Windows Sysinternals"]
+const SKILLS_CARDS = ["Objective - C", "C#", "Ruby", "Swift","Azure", "AWS"];
 
 const ProgressLine = ({ label, percentage, barBg, progresBg, barHeight }) => {
 const [widths, setWidths] = React.useState(0);
@@ -122,7 +189,7 @@ return (
 
 
 const Skills = ()=> (
-    <section className="container">
+    <section className="container" id="skills">
        <div className="skillsheader">
        <Typewriter
           options={{
@@ -172,13 +239,6 @@ const Skills = ()=> (
             <div className="skills__cards">
             {
                SKILLS_CARDS.map((item) => (
-                <p className="skills__cards__per">{ item }</p>
-               ))
-             }
-            </div>
-            <div className="skills__cards__infra"> 
-            {
-               INFRA_SKILLS_CARDS.map((item) => (
                 <p className="skills__cards__per">{ item }</p>
                ))
              }

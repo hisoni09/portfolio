@@ -35,9 +35,12 @@ function Nav() {
                 <a href='#about'>
                     <span>About</span>
                 </a>
-                {/* <a href='#contact'>
+                <a href='#skills'>
+                    <span>Skills</span>
+                </a>
+                <a href='#contact'>
                     <span>Contact</span>
-                </a> */}
+                </a>
             </NavMenu>
         </div>
     )

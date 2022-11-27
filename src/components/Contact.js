@@ -8,7 +8,7 @@ export default function ContactMe() {
     function sendEmail(e) {
         e.preventDefault();
 
-    emailjs.sendForm('service_91eswic', 'template_2m7xqoa', e.target, 'user_jeoDkFPXLTeRakyhWybWJ')
+    emailjs.sendForm('service_cmlo72r', 'template_sajw6zb', e.target, '6L5AgJn0uSveL6gsv')
         .then((result) => {
         }, (error) => {
         });
@@ -41,10 +41,10 @@ export default function ContactMe() {
                     </div>
                     <div className="socials">
                         <div className="linkedin">
-                            <a href="https://www.linkedin.com/in/hisoni09/">LinkedIn</a>
+                            <a href="https://www.linkedin.com/in/hisoni09/" target="_blank">LinkedIn</a>
                         </div>
                         <div className="github">
-                            <a href="https://github.com/hisoni09">GitHub</a>
+                            <a href="https://github.com/hisoni09" target="_blank">GitHub</a>
                         </div>
                     </div>   
                 </div>
@@ -52,10 +52,10 @@ export default function ContactMe() {
                     <form onSubmit={sendEmail}>
                             <div className="contactform">
                                 <div className="form-group mx-auto fields">
-                                    <input type="text" className="form-control" placeholder="Your Name" name="name"/>
+                                    <input type="text" className="form-control" placeholder="Your Name" name="from_name"/>
                                 </div>
                                 <div className="form-group pt-2 mx-auto fields">
-                                    <input type="email" className="form-control" placeholder="Your Email" name="email"/>
+                                    <input type="email" className="form-control" placeholder="Your Email" name="user_email"/>
                                 </div>
                                 <div className="form-group pt-2 mx-auto fields">
                                     <input type="text" className="form-control" placeholder="Subject" name="subject"/>

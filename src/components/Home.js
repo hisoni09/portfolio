@@ -10,8 +10,8 @@ const Home = (props) => {
     return (
         <Container>
             <UserField>
-                {/* <img src="/images/Picture1.png" alt="logo">
-                </img> */}
+                <img src="images/Picture1.PNG" alt="logo">
+                </img>
                 <Title>
                     <Designation>Software Engineer/Full Stack Developer </Designation>
                     <Name>Himanshu Soni</Name>
@@ -23,7 +23,7 @@ const Home = (props) => {
                         Currently, I'm working as Assistant Corporate Webmaster in Rocky Mountain Student Media Corp. <br /><br /> My specialties are in ReactJs and Nodejs application development
                     </Description>
                     <Controls>
-                        <DownloadCV href="/files/Himanshu_resume_n5.pdf">Download CV</DownloadCV>
+                        <DownloadCV href="/files/Himanshu_resume_n5.pdf" target="_blank">Download CV</DownloadCV>
                         <a href='#about'>
                             <Contact>About</Contact>
                         </a>
@@ -31,10 +31,10 @@ const Home = (props) => {
                 </Title>
             </UserField>
             <TimeLine />
-            {/* <Animation /> */}
-            {/* <Skills /> */}
+            <Skills />
             {/* <Awards /> */}
-            {/* <ContactMe /> */}
+            <Animation />
+            <ContactMe /> 
             <Temp />
         </Container>
     )

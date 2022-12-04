@@ -23,7 +23,7 @@ const Home = (props) => {
                         My specialties are in ReactJs, Nodejs and Java application development
                     </Description>
                     <Controls>
-                        <DownloadCV href="/files/Himanshu_resume_n5.pdf" target="_blank">Download CV</DownloadCV>
+                        <DownloadCV href="/files/Himanshu_resume.pdf" target="_blank">Download CV</DownloadCV>
                         <a href='#about'>
                             <Contact>About</Contact>
                         </a>
@@ -72,18 +72,18 @@ const UserField = styled.div`
     margin-bottom: 18vh;
     // max-width: calc(100vh - 7);
 
-    // img {
-    //     border-radius: 4px;
-    //     margin-top: -24vh;
-    //     min-height: 110vh;
-    //     min-width: 75vh;
-    //     max-height: 45vh;
-    //     margin-left: -4vw;
-    //     max-width: 35vh;
-    //     // border: 10px solid #cdc9c3;
-    //     object-fit: cover;
-    //     box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px, rgb(0 0 0 / 72%) 0px 30px 22px -10px;
-    // }
+     ${'' /* img {
+         border-radius: 4px;
+         margin-top: -24vh;
+         min-height: 110vh;
+         min-width: 75vh;
+         max-height: 45vh;
+         margin-left: -4vw;
+         max-width: 35vh;
+          border: 10px solid #cdc9c3;
+         object-fit: cover;
+         box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px, rgb(0 0 0 / 72%) 0px 30px 22px -10px;
+     } */}
 
     img {
         border-radius: 20%;

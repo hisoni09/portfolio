@@ -160,31 +160,31 @@ const SKILLS_LIST = [
 const SKILLS_CARDS = ["Objective - C", "C#", "Ruby", "Swift","Azure", "AWS"];
 
 const ProgressLine = ({ label, percentage, barBg, progresBg, barHeight }) => {
-const [widths, setWidths] = React.useState(0);
+  const [widths, setWidths] = React.useState(0);
 
-React.useEffect(() => {
-    requestAnimationFrame(() => setWidths(percentage));
-}, [percentage]);
+  React.useEffect(() => {
+      requestAnimationFrame(() => setWidths(percentage));
+  }, [percentage]);
 
-return (
-    <section className="progress-line">
-        <span className="progress-line__label">{ label }</span>
-        <div 
-            className="progress-line__outer"
-            style={ {
-                background: barBg,
-                height: `${barHeight}px`,
-            }}>
-            <div 
-                className="progress-line__inner" 
-                style={ {
-                    width: widths,
-                    background: progresBg,
-                    transition: 'width 15s',
-                } } /> 
-        </div>
-    </section>
-);
+  return (
+      <section className="progress-line">
+          <span className="progress-line__label">{ label }</span>
+          <div 
+              className="progress-line__outer"
+              style={ {
+                  background: barBg,
+                  height: `${barHeight}px`,
+              }}>
+              <div 
+                  className="progress-line__inner" 
+                  style={ {
+                      width: widths,
+                      background: progresBg,
+                      transition: 'width 15s',
+                  } } /> 
+          </div>
+      </section>
+  );
 };
 
 

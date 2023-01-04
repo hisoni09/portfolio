@@ -2,160 +2,314 @@ import React from 'react';
 import "./Skills.css";
 import Typewriter from "typewriter-effect";
 
+// const SKILLS_LIST = [
+//     {
+//       label: 'ReactJs',
+//       percentage: '100%',
+//     },
+//     {
+//       label: 'JavaScript',
+//       percentage: '100%',
+//     },
+//     {
+//       label: 'Redux',
+//       percentage: '95%',
+//     },
+//     {
+//       label: 'NextJs',
+//       percentage: '95%',
+//     },
+//     {
+//       label: 'Css',
+//       percentage: '95%',
+//     },
+//     {
+//       label: 'Bootstrap',
+//       percentage: '95%',
+//     },
+//     {
+//       label: 'Jest',
+//       percentage: '95%',
+//     },
+//     {
+//       label: 'MySQL',
+//       percentage: '80%',
+//     },
+//     {
+//       label: 'Webpack',
+//       percentage: '95%',
+//     },
+//     {
+//       label: 'C',
+//       percentage: '70%',
+//     },
+//     {
+//       label: 'Python',
+//       percentage: '70%',
+//     },
+//     {
+//       label: 'Angular',
+//       percentage: '90%',
+//     },
+//     {
+//       label: 'Django',
+//       percentage: '75%',
+//     },
+//     {
+//       label: 'SASS',
+//       percentage: '95%',
+//     },
+//     {
+//       label: 'XML',
+//       percentage: '95%',
+//     },
+//     {
+//       label: 'PHP',
+//       percentage: '95%',
+//     },
+//     {
+//       label: 'Wordpress',
+//       percentage: '95%',
+//     },
+//     {
+//       label: 'Swagger',
+//       percentage: '95%',
+//     },
+//     {
+//       label: 'Git',
+//       percentage: '95%',
+//     },
+//   ];
+
 const SKILLS_LIST = [
-    {
-      label: 'ReactJs',
-      percentage: '100%',
-    },
-    {
-      label: 'JavaScript',
-      percentage: '100%',
-    },
-    {
-      label: 'Redux',
-      percentage: '95%',
-    },
-    {
-      label: 'NextJs',
-      percentage: '95%',
-    },
-    {
-      label: 'Css',
-      percentage: '95%',
-    },
-    {
-      label: 'Bootstrap',
-      percentage: '95%',
-    },
-    {
-      label: 'Jest',
-      percentage: '95%',
-    },
-    {
-      label: 'MySQL',
-      percentage: '80%',
-    },
-    {
-      label: 'Webpack',
-      percentage: '95%',
-    },
-    {
-      label: 'C',
-      percentage: '70%',
-    },
-    {
-      label: 'Python',
-      percentage: '70%',
-    },
-    {
-      label: 'Angular',
-      percentage: '90%',
-    },
-    {
-      label: 'Django',
-      percentage: '75%',
-    },
-    {
-      label: 'SASS',
-      percentage: '95%',
-    },
-    {
-      label: 'XML',
-      percentage: '95%',
-    },
-    {
-      label: 'PHP',
-      percentage: '95%',
-    },
-    {
-      label: 'Wordpress',
-      percentage: '95%',
-    },
-    {
-      label: 'Swagger',
-      percentage: '95%',
-    },
-    {
-      label: 'Git',
-      percentage: '95%',
-    },
-  ];
+  {
+    label: 'JavaScript',
+    percentage: '100%',
+  },
+  {
+    label: 'Css',
+    percentage: '95%',
+  },
+  {
+    label: 'PHP',
+    percentage: '95%',
+  },
+  {
+    label: 'ReactJs',
+    percentage: '100%',
+  },
+  {
+    label: 'Redux',
+    percentage: '95%',
+  },
+  {
+    label: 'NextJs',
+    percentage: '95%',
+  },
+  {
+    label: 'Bootstrap',
+    percentage: '95%',
+  },
+  {
+    label: 'Jest',
+    percentage: '95%',
+  },
+  {
+    label: 'MySQL',
+    percentage: '80%',
+  },
+  {
+    label: 'Webpack',
+    percentage: '95%',
+  },
+  {
+    label: 'C',
+    percentage: '70%',
+  },
+  {
+    label: 'Python',
+    percentage: '70%',
+  },
+  {
+    label: 'Angular',
+    percentage: '90%',
+  },
+  {
+    label: 'Django',
+    percentage: '75%',
+  },
+  {
+    label: 'SASS',
+    percentage: '95%',
+  },
+  {
+    label: 'XML',
+    percentage: '95%',
+  },
+  {
+    label: 'Wordpress',
+    percentage: '95%',
+  },
+  {
+    label: 'Swagger',
+    percentage: '95%',
+  },
+  {
+    label: 'Git',
+    percentage: '95%',
+  },
+];
+
+const SKILLS_LIST_2 = [
+  {
+    label: 'HTML',
+    percentage: '90%',
+  },
+  {
+    label: 'Node.js',
+    percentage: '90%',
+  },
+  {
+    label: 'TypeScript',
+    percentage: '90%',
+  },
+  {
+    label: 'Redux Saga/Thunk',
+    percentage: '95%',
+  },
+  {
+    label: 'React Hooks',
+    percentage: '95%',
+  },
+  {
+    label: 'Java',
+    percentage: '95%',
+  },
+  {
+    label: 'Enzyme',
+    percentage: '95%',
+  },
+  {
+    label: 'Bootstrap',
+    percentage: '95%',
+  },
+  {
+    label: 'Docker',
+    percentage: '95%',
+  },
+  {
+    label: 'C++',
+    percentage: '75%',
+  },
+  {
+    label: 'Machine Learning',
+    percentage: '75%',
+  },
+  {
+    label: 'Vue',
+    percentage: '90%',
+  },
+  {
+    label: 'Material UI/Ant Design',
+    percentage: '90%',
+  },
+  {
+    label: 'LESS',
+    percentage: '95%',
+  },{
+    label: 'JSON',
+    percentage: '95%',
+  },
+  {
+    label: 'JQuery',
+    percentage: '95%',
+  },
+  {
+    label: 'Media Queries',
+    percentage: '95%',
+  },
+  {
+    label: 'Postman',
+    percentage: '95%',
+  },
+
+];
 
 
-  const SKILLS_LIST_2 = [
-    {
-      label: 'Node.js',
-      percentage: '90%',
-    },
-    {
-      label: 'TypeScript',
-      percentage: '90%',
-    },
-    {
-      label: 'Redux Saga/Thunk',
-      percentage: '95%',
-    },
-    {
-      label: 'React Hooks',
-      percentage: '95%',
-    },
-    {
-      label: 'HTML',
-      percentage: '90%',
-    },
-    {
-      label: 'Java',
-      percentage: '95%',
-    },
-    {
-      label: 'Enzyme',
-      percentage: '95%',
-    },
-    {
-      label: 'Bootstrap',
-      percentage: '95%',
-    },
-    {
-      label: 'Docker',
-      percentage: '95%',
-    },
-    {
-      label: 'C++',
-      percentage: '75%',
-    },
-    {
-      label: 'Machine Learning',
-      percentage: '75%',
-    },
-    {
-      label: 'Vue',
-      percentage: '90%',
-    },
-    {
-      label: 'Material UI/Ant Design',
-      percentage: '90%',
-    },
-    {
-      label: 'LESS',
-      percentage: '95%',
-    },{
-      label: 'JSON',
-      percentage: '95%',
-    },
-    {
-      label: 'JQuery',
-      percentage: '95%',
-    },
-    {
-      label: 'Media Queries',
-      percentage: '95%',
-    },
-    {
-      label: 'Postman',
-      percentage: '95%',
-    },
+  // const SKILLS_LIST_2 = [
+  //   {
+  //     label: 'Node.js',
+  //     percentage: '90%',
+  //   },
+  //   {
+  //     label: 'TypeScript',
+  //     percentage: '90%',
+  //   },
+  //   {
+  //     label: 'Redux Saga/Thunk',
+  //     percentage: '95%',
+  //   },
+  //   {
+  //     label: 'React Hooks',
+  //     percentage: '95%',
+  //   },
+  //   {
+  //     label: 'HTML',
+  //     percentage: '90%',
+  //   },
+  //   {
+  //     label: 'Java',
+  //     percentage: '95%',
+  //   },
+  //   {
+  //     label: 'Enzyme',
+  //     percentage: '95%',
+  //   },
+  //   {
+  //     label: 'Bootstrap',
+  //     percentage: '95%',
+  //   },
+  //   {
+  //     label: 'Docker',
+  //     percentage: '95%',
+  //   },
+  //   {
+  //     label: 'C++',
+  //     percentage: '75%',
+  //   },
+  //   {
+  //     label: 'Machine Learning',
+  //     percentage: '75%',
+  //   },
+  //   {
+  //     label: 'Vue',
+  //     percentage: '90%',
+  //   },
+  //   {
+  //     label: 'Material UI/Ant Design',
+  //     percentage: '90%',
+  //   },
+  //   {
+  //     label: 'LESS',
+  //     percentage: '95%',
+  //   },{
+  //     label: 'JSON',
+  //     percentage: '95%',
+  //   },
+  //   {
+  //     label: 'JQuery',
+  //     percentage: '95%',
+  //   },
+  //   {
+  //     label: 'Media Queries',
+  //     percentage: '95%',
+  //   },
+  //   {
+  //     label: 'Postman',
+  //     percentage: '95%',
+  //   },
 
-  ];
+  // ];
 
 const SKILLS_CARDS = ["Objective - C", "C#", "Ruby", "Swift","Azure", "AWS"];
 

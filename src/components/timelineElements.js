@@ -1,7 +1,7 @@
 let timelineElements = [
   {
       id: 1,
-      title: "RMSMC | Corporate Webmaster ",
+      title: "RMSMC | Web Developer",
       location: "Fort Collins, Colorado, USA",
       description:
         "",

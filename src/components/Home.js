@@ -13,14 +13,14 @@ const Home = (props) => {
                 <img src="images/Picture111.png" alt="logo">
                 </img>
                 <Title>
-                    <Designation>Web Developer/Full Stack Developer </Designation>
+                    <Designation>Software Engineer/Full Stack Developer </Designation>
                     <Name>Himanshu Soni</Name>
                     <hr className="green-line"/>
                     <Description>
-                    Graduate Student in CS @ Colorado State University. Currently, I'm working as Web Developer at Rocky Mountain Student Media Corp. and Parking & IT
+                    Graduate Student in CS @ Colorado State University | Seeking Summer '23 Internships. Software Engineer with 3+ years of experience. Currently, I'm working as Web Developer at Rocky Mountain Student Media Corp.
                     </Description>
                     <Description>
-                        My specialties are in HTML, CSS, JavaScript, ReactJs, Nodejs and Java application development
+                        My specialties are in JavaScript, ReactJs, Nodejs, HTML, CSS and Java application development
                     </Description>
                     <Controls>
                         <DownloadCV href="/files/Himanshu_resume.pdf" target="_blank">Download CV</DownloadCV>
